@@ -1,3 +1,27 @@
+
+class QNode:
+    def __init__(self):
+        self.ahead = None
+        self.behind = None
+        self.value = None
+        
+    def setAhead(self,aheadNode):
+        self.ahead = aheadNode
+    def setBehind(self,behindNode):
+        self.behind = behindNode
+    def setValue(self,inputValue):
+        self.value = inputValue 
+    
+    def getBehind(self):
+        return self.behind
+    def getAhead(self):
+        return self.ahead
+    def getValue(self):
+        return self.value
+
+
+
+
 class Queue:
     def __init__(self):
         self.front = None
